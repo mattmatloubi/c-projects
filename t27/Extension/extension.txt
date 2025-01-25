@@ -1,0 +1,21 @@
+I chose hashing as my method. I had a few specific reasons to go with this. Firstly, hashing is
+an area I feel I haven't had much experience with yet and this was a great opportunity to give it a go.
+Secondly, C is one of few high(ish) level languages that don't have built in hashing functionality, 
+so this was a good chance to manually implement a true hashing ADT with nothing else going on under-the-hood. 
+Thirdly, it felt natural to go with hashing for dictionaries - if you looked for a word in a real-life
+dictionary, you would have a decent idea of where to start searching, or perhaps instantly find the correct page!
+This idea seems supported by the fact that in Python, the dictionary data structure is the 
+language's native implementation of a hashmap.
+
+Initially, it seemed that a robust hash function with a low collision rate would allow for searching and inserting 
+at constant time on average. However, this ignores the crucial fact that hashing a string is an O(n) operation. 
+This makes it, in a practical sense, at best an equal match to the trie (which has O(n) search and 
+insertion times) due to collisions. I chose to deal with collisions using chaining, which I found to be the 
+simpler method when using a makeshift hash function, likely with a high collision rate. Chaining however has higher 
+memory and runtime overhead compared to open addressing, due to the linked data structure which requires
+more allocs. Memory usage overall is higher on average compared to the trie, as there will be 
+plenty of empty space in the array given it's size. Despite this, the space complexity of this method is
+at worst O(n), as space increases linearly with each unique word added, despite the initial large alloc. Similarly,
+the trie is also at worst O(n) space, but for each character added, making it somewhat unfair to compare to hashing. 
+However, you would expect this to vastly improve on average as the dictionary grows, due to preexisting pathways. This 
+effect is not at all present in hashing.
