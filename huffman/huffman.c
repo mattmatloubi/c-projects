@@ -91,7 +91,7 @@ int find_zeros(queue* q)
    return i;
 }
 
-// kind of long
+// where the magic happens
 node* build_tree(queue* q)
 {
    node* root = NULL;
@@ -165,9 +165,11 @@ bool insert(queue* q, node* n)
    return true;
 }
 
+// frees all the allocated memory within build_array
+// starts off as an array of nodes but ends up with a giant huffman tree
 void free_tree(node* root) 
-{    // why does this not free all the allocated memory within build_array??
-   if (root == NULL) { // actually it does..
+{ 
+   if (root == NULL) {
       return;
    }
    free_tree(root->left);

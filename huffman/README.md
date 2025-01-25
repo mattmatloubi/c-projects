@@ -1,1 +1,1 @@
-# hello
+This piece of code attempts to generate a Huffman compression tree based on a text file input, outputting the encoding for each character along with other key details, the original file size, compressed size as well as the compression rate. This was coded up over a weekend (because I felt like it) about 2 months into the course.

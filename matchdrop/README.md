@@ -1,0 +1,1 @@
+This was written for a summative assignment. The instructions for the algorithm were strict - hence the brute force approach. We are marked on our ability to write well structured code with a high degree of readability as opposed to coming up with a faster algorithm. This code earned a 77 grade.

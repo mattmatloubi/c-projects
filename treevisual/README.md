@@ -1,0 +1,1 @@
+This was coded up for the third and final coder of the week competition, in which it jointly came 1st. It attempts to take in an input string of a binary tree and output it in a "compact" form. See exercises in C pdf for more details. 

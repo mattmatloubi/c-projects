@@ -1,0 +1,1 @@
+This was my first "major" piece of code written in my masters course - maybe a few weeks after first learning how to code in C. It was written for the first coder of the week competition and jointly won 1st place.

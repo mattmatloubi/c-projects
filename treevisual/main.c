@@ -43,5 +43,4 @@ some strings to try out for the main arg:
 ^above as 1 line
 
 2 strings above work if screen is big enough and you reduce font and char spacing a bit on the terminal? 
-
 */
