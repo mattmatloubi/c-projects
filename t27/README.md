@@ -1,1 +1,1 @@
-This was written for my final Programming in C assignment. See exercisesinC.pdf for more details. This code earned a 78 grade.
+This was written for my final Programming in C assignment. The extension involved changing the data structure (from a trie) used for the dictionary ADT. I went with designing a hash table that dealt with collisions using chaining. There is also a .txt file that explains my motivations and compares the two methods, which was an important part of the extension. This code earned a 78 grade.
